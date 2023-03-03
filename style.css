@@ -1,0 +1,324 @@
+*{
+  margin: 0;
+}
+
+/* home-login */
+
+.bg-home-img{
+  background: rgb(108, 108, 108) url(./picture/levi-home.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.navbar{
+  background: #6A1420;
+  box-shadow: 0px 4px 30px 19px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 40px;
+  text-align: right;
+}
+
+.scout-logo{
+  float: left;
+  width: 30px;
+  margin-left: 30px;
+  margin-top: 2px;
+}
+
+.webname{
+  float: left;
+  margin-left: 10px;
+  color: white;
+  font-family: 'Inder', sans-serif;
+  margin-top: 8px;
+}
+
+ul li{
+  display: inline-block;
+  padding: 10px 50px;
+  margin: 0 20px;
+  position: relative;
+}
+
+ul li a{
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  font-family: 'Inder', sans-serif;
+}
+
+ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: .2s;
+}
+
+ul li:hover::after{
+  width: 100%;
+}
+
+.active::after{
+  content: '';
+  height: 3px;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.anime-name{
+  float: right;
+  margin-top: 70px;
+  margin-right: 80px;
+}
+
+.char-fname{
+  font-family: 'Trade Winds', cursive;
+  font-style: normal;
+  font-size: 130px;
+  line-height: 200%;
+  letter-spacing: .2em;
+  font-weight: bold;
+  color: #1C0924;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
+  position: absolute;
+  left: 110px;
+  top: 240px;
+}
+
+.char-lname{
+  font-family: 'Trade Winds', cursive;
+  font-style: normal;
+  font-size: 130px;
+  line-height: 400%;
+  letter-spacing: .05em;
+  font-weight: bold;
+  color: #1C0924;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
+  position: absolute;
+  left: 110px;
+  top: 250px;
+}
+
+footer{
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  left: 0px;
+  background: #6A1420;
+}
+
+.foot{
+  color: white;
+  font-family: 'Inder', sans-serif;
+  text-align: center;
+  font-size: 15px;
+}
+
+
+/* about-login */
+
+.bg-about-img{
+  background: rgb(161, 126, 126) url(./picture/about-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.person{
+  width: 33%;
+  margin-left: 65%;
+  margin-top: 3%;
+}
+
+.text-box{
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 60%;
+  height: 60%;
+  top: 200px;
+  left: 60px;
+  border-radius: 10px;
+}
+
+.about-txt{
+  font-family: 'Inder', sans-serif;
+  color: white;
+  font-size: 150%;
+  line-height: 194.52%;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  letter-spacing: 0.085em;
+  margin: 20px;
+}
+
+
+/* login */
+
+.bg-login-img{
+  background: rgb(182, 137, 137) url(./picture/login-reg-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  color: white;
+}
+
+.form-box{
+  position: relative;
+  width: 60%;
+  height: 450px;
+  background: rgba(217, 217, 217, 0.6);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 20px;
+}
+
+.welc{
+  font-family: 'Inder', sans-serif;
+  width: 100%;
+  font-size: 350%;
+  color: black;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+hr{
+  border-color: black;
+  margin-top: 20px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.input-box{
+  font-family: 'Germania One', cursive;
+  line-height: 194.52%;
+  letter-spacing: 0.025em;
+  left: 10%;
+  justify-content: center;
+  position: relative;
+  margin: 20px 0;
+  width: 80%;
+  border-bottom: 2px solid white;
+  margin-bottom: 40px;
+}
+
+.input-box label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 1em;
+  pointer-events: none;
+  transition: .3s;
+}
+
+input:focus ~ label, input:valid ~ label{
+  top: -5px;
+}
+
+.input-box input{
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0 35px 0 5px;
+  color: white;
+}
+
+button{
+  background: #6A1420;
+  box-shadow: 0px 7px 14px 7px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: 'Inder', sans-serif;
+  font-size: large;
+  outline: none;
+  position: absolute;
+  left: 37%;
+  margin-top: -15px;
+  color: white;
+}
+
+.login-btn{
+  width: 25%;
+  height: 50px;
+}
+
+
+/* register */
+
+.reg{
+  margin-top: 90px;
+  font-size: .9em;
+  color: white;
+  text-align: center;
+  font-family: 'Inder', sans-serif;
+  letter-spacing: 0.085em;
+}
+
+.reg p a{
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(42, 42, 184);
+}
+
+.reg p a:hover{
+  text-decoration: underline;
+}
+
+.stance-1{
+  position: absolute;
+  left: -9%;
+  width: 20%;
+}
+
+.stance-2{
+  position: absolute;
+  left: -15%;
+  width: 30%;
+}
+
+.form-box-reg{
+  position: relative;
+  width: 60%;
+  height: 550px;
+  background: rgba(217, 217, 217, 0.6);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 20px;
+}
